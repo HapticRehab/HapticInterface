@@ -1,8 +1,5 @@
-//Controllo 626.ccp è il MAIN della console application. Ricordarsi che i DAC usati sono nei canali 0 e 1.
+//Controllo 626.ccp Ã¨ il MAIN della console application. Ricordarsi che i DAC usati sono nei canali 0 e 1.
 //Gli Encoder utilizzati sono nei canali 0 e 2.
-//La prima cosa che fa il controllo è quella di portare i motori a degli angoli di 45 gradi. Per farlo deve portare i bracci in una configurazione che permette di trovare uno zero meccanico.
-
-//HapticSocket.h contiene <winsock2.h> che è dentro anche a <windows.h> per cui bisogna prima fare #include "HapticSocket.h" e dopo #include <windows.h>
 
 #include "stdafx.h"
 #include "HapticSocket.h"
@@ -39,7 +36,7 @@ int main()
 	board.setEncoder();										//Inizializzo gli Encoder
 	board.resetDac();										//Spengo tutti i Dac
 
-	//Gli do una posizione in x e y e lui da ogni punto in cui è ci arriva
+	//Gli do una posizione in x e y e lui da ogni punto in cui Ã¨ ci arriva
 	/*
 	robot.initializePosition(board, 0, 0.25);
 	Sleep(5000);
