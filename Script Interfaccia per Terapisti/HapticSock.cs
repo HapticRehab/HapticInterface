@@ -87,7 +87,7 @@ namespace Assets.Scripts
                 else
                 {
                     connection_Holo = socket();
-                    connection_Holo.ReceiveTimeout = 4000;
+                    connection_Holo.ReceiveTimeout = 15000;
                     try
                     {
                         connection_Holo.Connect(new IPEndPoint(IPAddress.Parse(ip), port));
